@@ -60,3 +60,19 @@ Details used for this project:
   * Spring Web
   * H2 Database
   * Lombok
+
+### Deploy
+
+#### Pack
+
+Select `Maven` -> `Clean` + `Package`, 
+
+or from the terminal execute `./mvnw clean package`
+
+#### Run
+
+File is generated in the `/target` location: photos-0.0.1-SNAPSHOT.jar. 
+This file may be launched without IDE but with Java 17. 
+On launch a new database to store files will be generated inside the same repository.
+
+To launch, open the file location and execute: `java -jar .\photos-0.0.1-SNAPSHOT.jar`
